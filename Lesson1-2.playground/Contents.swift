@@ -30,8 +30,8 @@ print("Периметр треугольника со сторонами \(kat1)
 //1
 let a: Float = 3.14
 let b: Float = 42.0
-let result1 = a + b
-print(Double(result1))
+let result1 = Double(a + b)
+print(result1)
 
 //2
 let numberOne = 50
@@ -66,6 +66,8 @@ if monthOfBirth >= 1 && monthOfBirth <= 3 {
     print("я родился в третьем квартале")
 }   else if monthOfBirth >= 7 && monthOfBirth <= 9 {
     print("я родился в четвертом квартале")
+} else {
+    print("error")
 }
 
 //4
