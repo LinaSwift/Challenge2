@@ -123,6 +123,30 @@ for num in numbers {
 }
 
 //3
+for iteration in 1...10 {
+    let randomNumber = Int.random(in: 1...10)
+    if randomNumber == 5 {
+        print("чтобы выпало 5 понадобилось \(iteration) итераций")
+        break
+    }
+}
 
 
+//4
+var distance = 0
+var numberOfDays = 0
+var isDay = true
+
+while distance != 10 {
+    if isDay {
+        distance += 2
+        numberOfDays += 1
+        isDay = false
+    } else {
+        distance -= 1
+        isDay = true
+    }
+}
+
+print("черепашке понадобаилось \(numberOfDays) дней чтобы взобраться на \(distance) метровый столб")
 
